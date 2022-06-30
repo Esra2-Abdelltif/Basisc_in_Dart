@@ -12,7 +12,7 @@ String reverseText2(String Text){
   return reversed;
 }
 
-//بتجمع الارقام
+//بتجمع الارقام الي بين الرقمين الي هدخلهم
 int AddUpTo(int StratNum ,int EndNum){
   int sum=0;
   for (int i=StratNum;i <= EndNum;i++){
@@ -26,7 +26,7 @@ double AddUpTo2(EndNum){
 }
 
 
-// بتجمع الارقام الي في list
+// بتجمع كل الارقام الي في list
 int sum(List<int> numbers ){
   int sum=0;
   for (int i=0;i <numbers.length;i++){
