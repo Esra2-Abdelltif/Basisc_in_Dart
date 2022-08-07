@@ -1,5 +1,6 @@
 //الطريقه العاديه
 //Big(O)=n^2
+//بنمشي علي ليست عنصر عنصر و نرتب مكانه فا هتكون مترتبه من الاخر الاول و بعدين نرجه لي اول الليست و نقارن لحد ما ترتتب
 List <int> BubbleSort(List <int>list){
   for(int i=0;i<list.length;i++){
     for(int j=0;j<list.length-1;j++){
