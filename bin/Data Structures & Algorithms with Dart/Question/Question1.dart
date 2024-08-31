@@ -21,19 +21,20 @@
 // 5-If the list ends return -1.
 
 String findNumberInList(List list, value){
-  for(int i=0; i< list.length;i++){
-    if(list[i] == value){
-      return 'found Num at index ${i+1}';
+  if(list.isNotEmpty) {
+    for (int i = 0; i < list.length; i++) {
+      if (list[i] == value) {
+        return 'found Num at index ${i + 1}';
+      }
     }
 
-
+    return 'not found Num at list';
   }
-
-  return 'not found Num at list';
-
+  return 'List is Empty';
 }
 
 void main(List<String> arguments) {
   print(findNumberInList([1,7,14,4,8,9],9));
+  print(findNumberInList([],9));
 
 }
