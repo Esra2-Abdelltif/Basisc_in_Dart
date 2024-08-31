@@ -7,8 +7,18 @@
 
 //***************
 
+
 //قبل ما احل المشكله لازم احدد شويه حاجات
-// 1-inPut ,outPut
+// 1-inPut => List of num  ,outPut => index of value
+// 2-ask if list is order
+// 3-test ,edge cases
+
+//Step to Solve Problem
+// 1-check number in first index.
+// 2- compare first element with required element if equal rerun index.
+// 3- if not equal move to next element .
+// 4- repit move until find required element or reach the end of the list.
+// 5-If the list ends return -1.
 
 void main(List<String> arguments) {
   print("Addtion(5, 10)");
