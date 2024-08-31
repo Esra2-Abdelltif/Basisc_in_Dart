@@ -20,6 +20,20 @@
 // 4- repit move until find required element or reach the end of the list.
 // 5-If the list ends return -1.
 
+String findNumberInList(List list, value){
+  for(int i=0; i< list.length;i++){
+    if(list[i] == value){
+      return 'found Num at index ${i+1}';
+    }
+
+
+  }
+
+  return 'not found Num at list';
+
+}
+
 void main(List<String> arguments) {
-  print("Addtion(5, 10)");
+  print(findNumberInList([1,7,14,4,8,9],9));
+
 }
