@@ -1,8 +1,8 @@
 class Person{
-  String _name;
-  String _email;
-  int _age;
-  double _hieght ;
+  late String _name;
+  late String _email;
+  late int _age;
+  late double _hieght ;
 
   String getname() => _name;
 
@@ -10,7 +10,7 @@ class Person{
     this._name = value;
   }
 
-  String _grade;
+  late  String _grade;
 
   String getemail()  => _email;
 
