@@ -5,35 +5,51 @@
 // How would you go about implementing this functionality
 
 //***************
+// LinkedList
+//كل element عباره عن حاجتين Pointer و Item
+//Pointer عموما هو بيشوار ع عنصر الي واقف عليه
+//داخل Pointer محفوظ فيه address تبع الItem الي بعده معني كدا ان كل عنصر مبربوط بالعنصر الي بعده
+//و اخر عنصر ال Pointer =null
+//بنسمي Node <=(Item,Pointer)
+//Head <= Linked List بدايه ال
 
 
-//قبل ما احل المشكله لازم احدد شويه حاجات
-// 1-inPut => List of num  ,outPut => index of value
-// 2-ask if list is order
-// 3-test ,edge cases
-
-//Step to Solve Problem
-// 1-check number in first index.
-// 2- compare first element with required element if equal rerun index.
-// 3- if not equal move to next element .
-// 4- repit move until find required element or reach the end of the list.
-// 5-If the list ends return -1.
-
-String findNumberInList(List list, value){
-  if(list.isNotEmpty) {
-    for (int i = 0; i < list.length; i++) {
-      if (list[i] == value) {
-        return 'found Num at index ${i + 1}';
-      }
-    }
-
-    return 'not found Num at list';
-  }
-  return 'List is Empty';
+class Task{
+  int id;
+  String text;
+  Task({required this.id,required this.text});
 }
 
+class Node{
+  Task task;
+  Node? nextNode;
+
+  Node({required this.task, this.nextNode});
+}
+
+void insertTaskToLinkedList(Node head,Task newTask){
+  Node pointer=head;
+  while(pointer.nextNode !=null){
+    pointer=pointer.nextNode!;
+  }
+  pointer.nextNode=Node(task: newTask);
+}
+
+
+
+void printLinkedList(Node head){
+  Node? pointer=head;
+  while(pointer !=null){
+    print(pointer.task.text);
+    pointer=pointer.nextNode;
+  }
+}
+
+
 void main(List<String> arguments) {
-  print(findNumberInList([1,7,14,4,8,9],9));
-  print(findNumberInList([],9));
+Node head=Node(task:Task(id: 1, text: "task1"));
+insertTaskToLinkedList(head, Task(id: 2, text: "New task"));
+ printLinkedList(head);
+
 
 }
