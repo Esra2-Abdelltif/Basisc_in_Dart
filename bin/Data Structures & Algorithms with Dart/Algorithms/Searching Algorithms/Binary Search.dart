@@ -15,6 +15,7 @@ String BinarySearch(List list, value){
 
   if(list.isNotEmpty) {
     while (start <= end) {
+      //Floor convert num to int num
       int mid = ((start + end) ~/ 2).floor();
       if (value == list[mid]) {
         return 'Value at index ${mid}';
