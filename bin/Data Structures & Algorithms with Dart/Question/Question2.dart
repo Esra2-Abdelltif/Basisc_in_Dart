@@ -1,16 +1,16 @@
 /// Question
 
-//Alice has some cards with numbers written on them.
-// She arranges the cards in decreasing order, and lays them out face down in a sequence on a table.
-// She challenges Bob to pick out the card containing a given number by turning over as few cards as possible.
-// Write a function to help Bob locate the card
+// Suppose you are developing a to-do list application.
+// Your goal is to allow users to add and remove tasks from the list,and to display the tasks to the user.
+// How would you go about implementing this functionality
 
 //***************
 
 
 //قبل ما احل المشكله لازم احدد شويه حاجات
 // 1-inPut => List of num  ,outPut => index of value
-// 2-test ,edge cases
+// 2-ask if list is order
+// 3-test ,edge cases
 
 //Step to Solve Problem
 // 1-check number in first index.
