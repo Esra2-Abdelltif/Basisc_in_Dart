@@ -9,9 +9,8 @@
 
 
 //قبل ما احل المشكله لازم احدد شويه حاجات
-// 1-inPut => List of num  ,outPut => index of value
-// 2-ask if list is order
-// 3-test ,edge cases
+// 1-inPut => List of num and value ,outPut => index of value
+// 2-test ,edge cases
 
 //Step to Solve Problem
 // 1-check number in first index.

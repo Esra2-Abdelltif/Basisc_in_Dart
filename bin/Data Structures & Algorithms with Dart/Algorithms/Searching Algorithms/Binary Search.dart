@@ -12,24 +12,29 @@ String BinarySearch(List list, value){
 
   int start =0;
   int end =list.length-1;
-  while(start<=end){
-    int mid=((start+end)~/2).floor();
-    if(value ==list[mid] )
-      {
+
+  if(list.isNotEmpty) {
+    while (start <= end) {
+      //Floor convert num to int num
+      int mid = ((start + end) ~/ 2).floor();
+      if (value == list[mid]) {
         return 'Value at index ${mid}';
       }
-    else if(value > list[mid] ){
-      start=mid+1;
+      else if (value > list[mid]) {
+        start = mid + 1;
+      }
+      else {
+        end = mid - 1;
+      }
     }
-    else {
-      end =mid-1;
-    }
+    return 'Not Found';
   }
-  return 'Not Found';
-
+  return 'List is Empty';
 
 
 }
 void main(List<String> arguments) {
   print(BinarySearch([1,7,14,24,88,99],99));
+  print(BinarySearch([],99));
+
 }
