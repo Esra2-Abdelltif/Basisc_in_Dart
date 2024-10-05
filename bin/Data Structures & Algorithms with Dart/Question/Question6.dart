@@ -18,6 +18,5 @@ int reverse(int x) {
 
 }
 void main(List<String> arguments) {
-  print(pow(2,31)-1);
   print(reverse(1534236469));
 }
