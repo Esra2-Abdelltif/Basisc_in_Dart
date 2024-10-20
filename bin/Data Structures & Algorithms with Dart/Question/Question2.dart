@@ -48,7 +48,7 @@ void printLinkedList(Node head){
 
 void main(List<String> arguments) {
 Node head=Node(task:Task(id: 1, text: "task1"));
-insertTaskToLinkedList(head, Task(id: 2, text: "New task"));
+insertTaskToLinkedList(head, Task(id: 2, text: "New task "));
  printLinkedList(head);
 
 

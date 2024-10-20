@@ -39,7 +39,7 @@ int fact(int num){
 List collectOddvalues(List list){
   List result=[];
   void helper(List helperInput){
-    print(helperInput);
+    // print(helperInput);
     if(helperInput.isEmpty){
       return ;
     }
@@ -71,9 +71,6 @@ List collectOddvalue(List list){
 
 
 }
-
-
-
 
 
 void main(List<String> arguments) {

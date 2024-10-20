@@ -5,10 +5,9 @@ int Addtion(int num1 ,int num2){
 //---------------------------------------------
 //هfunction هتاخد string و ترجع عدد تكرار كل حرف فيه
 void CountCharletters(String input){
-  int count=0;
   var Text =input.toUpperCase().split('');
   for(int i=0; i<Text.length ;i++){
-    count=0;
+    int count=0;
     for(int j=0;j<Text.length ;j++){
       if(Text[i]==Text[j]){
         count++;
@@ -21,9 +20,9 @@ void CountCharletters(String input){
 
 }
 //ديه طريقه اصح اكتر
-Map CharCount(String Text){
+ CharCount(String Text){
   Map result={};
-  String UpperCaseText =Text.toUpperCase();
+  var UpperCaseText =Text.toUpperCase().replaceAll(" ", "");
   for(int i=0; i<UpperCaseText.length ;i++){
     String Char =UpperCaseText[i];
     //by3ml chech lw char mawgod fe map
@@ -45,6 +44,7 @@ Map CharCount(String Text){
 void main(List<String> arguments) {
   print(Addtion(5, 10));
   print( CharCount("Esraa AbdellATIF"));
-  CountCharletters('Teyxyt');
+
+  CountCharletters('Esraa AbdellATIF');
 
 }
