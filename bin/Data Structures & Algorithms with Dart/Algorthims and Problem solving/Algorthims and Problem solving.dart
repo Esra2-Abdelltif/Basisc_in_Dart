@@ -20,7 +20,7 @@ void CountCharletters(String input){
 
 }
 //ديه طريقه اصح اكتر
-Map CharCount(String Text){
+ CharCount(String Text){
   Map result={};
   var UpperCaseText =Text.toUpperCase().replaceAll(" ", "");
   for(int i=0; i<UpperCaseText.length ;i++){

@@ -20,9 +20,10 @@ int AddUpTo(int StratNum ,int EndNum){
   }
 return sum;
 }
-double AddUpTo2(EndNum){
+ AddUpTo2(EndNum){
 //شرط انها تبدا من الواحد
-  return (EndNum * (EndNum+1) / 2 );
+  print (EndNum * (EndNum+1) / 2 );
+
 }
 
 
@@ -70,6 +71,7 @@ void printallpairs(n){
 }
 
 void main(List<String> arguments) {
+  AddUpTo2(4);
   //تحسب الوقت الي بتاخده كله فانكشن لحت التنفيذ
   //Stopwatch stopwatch =Stopwatch()..start();
    //print(reverseText('Esraa'));
@@ -79,8 +81,14 @@ void main(List<String> arguments) {
    //CountUpToDown(10);
    //printallpairs(5);
    //print(sum([1,8,7,6]));
-  ListItem([4,7,6,7]);
+  // ListItem([4,7,6,7]);
 
   //print(stopwatch.elapsed);
+
+  // Task 7: Find common element from two sets
+  print('Task 7');
+  Set footballTeam = {'Gloria', 'Phil', 'Claire'};
+  Set playCast = {'Claire', 'Haley', 'Luke'};
+  print(footballTeam.intersection(playCast));
 
 }
